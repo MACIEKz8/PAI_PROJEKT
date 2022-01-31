@@ -14,7 +14,9 @@ podstrony bez wcześniejszego zalogowania się.
 Hasło użytkownika przechowywane jest w bazie danych po uprzednim zabezpieczeniu go algorytmem hashującym sha512.
 
 
-
+```
+PROJEKT NAPISANY CAŁKOWICIE W SPOSÓB OBIEKTOWY
+```
 ``````
 W skład aplikacji wchodzi 11 widoków:
 - register.php
