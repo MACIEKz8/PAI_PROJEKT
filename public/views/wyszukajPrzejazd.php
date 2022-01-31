@@ -12,24 +12,9 @@
         <main>
             <header class="headers">Wyszukaj przejazd</header>
             <section class="searchRides">
-<!--                <form action="search" method="get">-->
-<!--                <form>-->
-<!--                    <div class="find-ride">-->
-<!--                        <div>-->
-<!--                            <input name="miasto-startowe" type="text" placeholder="Miasto startowe">-->
-<!--                            <input name="miasto-docelowe" type="text" placeholder="Miasto docelowe">-->
-<!--                            <input name="data" type="text" placeholder="Data przejazdu" onfocus="this.type='date'">-->
-<!--                            <input name="rozmiar" type="text" placeholder="Rozmiar przesyłki">-->
-<!--                            <button id="search-input" type="submit">-->
-<!--                                <i class="fas fa-search"></i>-->
-<!--                            </button>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </form>-->
+
                     <div class="find-ride">
-<!--                        <div>-->
-                            <input name="miasto-startowe" type="text" placeholder="Wpisz miasto startowe">
-<!--                        </div>-->
+                        <input name="miasto-startowe" type="text" placeholder="Wpisz miasto startowe">
                     </div>
                 <div class="find-content-table">
                     <table class="tables">

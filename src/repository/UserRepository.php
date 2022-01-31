@@ -82,7 +82,6 @@ class UserRepository extends Repository
         ');
         $stmt->bindParam(':name', $user->getName(), PDO::PARAM_STR);
         $stmt->bindParam(':surname', $user->getSurname(), PDO::PARAM_STR);
-//        $stmt->bindParam(':phone', $user->getPhone(), PDO::PARAM_STR);
         $stmt->execute();
 
         $data = $stmt->fetch(PDO::FETCH_ASSOC);

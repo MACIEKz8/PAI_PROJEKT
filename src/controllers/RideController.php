@@ -22,12 +22,8 @@ class RideController extends AppController
         if(isset($_SESSION['email']))
         {
             $rides = $this ->rideRepository->getAllRides();
-//            foreach ($rides as $ride){
-//                $users = $this->userRepository->getUserFromId($ride['id_added_by']);
-//            }
             $users = $this ->userRepository->getAllUsers();
             $this->render('wyszukajPrzejazd', ['rides' => $rides, 'users' => $users]);
-//            $this->render('wyszukajPrzejazd', ['rides' => $rides]);
         }else
             $this->render('login');
     }

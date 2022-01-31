@@ -6,34 +6,6 @@ require_once __DIR__.'/../models/Package.php';
 
 class PackageRepository extends Repository
 {
-
-//    public function getPackage(int $id): ?Package
-//    {
-//        $stmt = $this->database->connect()->prepare('
-//            SELECT * FROM packages WHERE id = :id
-//        ');
-//        $stmt->bindParam(':id', $id, PDO::PARAM_INT);
-//        $stmt->execute();
-//
-//        $package = $stmt->fetch(PDO::FETCH_ASSOC);
-//
-//        if ($package == false) {
-//            return null;
-//        }
-//
-//        return new Package(
-//            $package['start_city'],
-//            $package['destination'],
-//            $package['start_address'],
-//            $package['destination_address'],
-//            $package['start_post_code'],
-//            $package['destination_post_code'],
-//            $package['package_size'],
-//            $package['send_date'],
-//            $package['send_time']
-//        );
-//    }
-
     public function newPackage(Package $package, $added_by) :void{
         $stmt = $this->database->connect()->prepare('
             INSERT INTO packages (id_added_by, start_city, destination, start_address, destination_address, start_post_code, destination_post_code, package_size, send_date, send_time)
