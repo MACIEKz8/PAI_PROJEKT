@@ -48,7 +48,7 @@ class RideController extends AppController
         if(isset($_SESSION['email'])) {
             if ($this->isPost()) {
                 $user = $this->userRepository->getUser($_SESSION['email']);
-                $idAddedBy = $this->userRepository->getUserDetailsId($user);
+                $idAddedBy = $this->userRepository->getUserDetailsId($user) + 1;
                 $ride = new Ride($_POST['miasto-startowe'], $_POST['miasto-docelowe'], $_POST['data'], $_POST['godzina'], $_POST['samochod'], $_POST['rozmiary'], $idAddedBy);
                 $this->rideRepository->newRide($ride, $idAddedBy);
                 return $this->render('mojePrzejazdy', ['rides' => $this->rideRepository->getRides($idAddedBy), 'messages' => ['Pomyślnie dodano przejazd!'], 'ride' => $ride]);

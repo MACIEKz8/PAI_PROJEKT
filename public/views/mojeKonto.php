@@ -36,7 +36,7 @@
                 <label>Identyfikator użytkownika: </label>
                 <label>
                     <?php if(isset($id)){
-                        echo $id;
+                        echo $id+1;
                     }?>
                 </label>
 
